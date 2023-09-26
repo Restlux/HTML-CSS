@@ -27,24 +27,26 @@
 }
 .middle-section{
     flex: 1;
-    margin-left: 10px;
-    margin-right: 35px;
-    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 650px;
     display: flex;
     align-items: center;
 }
 .search::placeholder{
     font-family: Roboto, Arial;
-    font-size: 15px;
+    font-size: 16px;
+    border: none;
 }
 .search{
     flex:1;
-    height: 32px;
-    padding-left: 10px;
+    height: 40px;
+    padding-left: 18px;
     font-size: 15px;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(78, 78, 78);
+    color:white;
+    border-color: rgba(241, 241, 241, 0.15);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
@@ -52,18 +54,21 @@
     background-color: rgb(16, 16, 16);
 }
 .search-button{
-    height: 35px;
+    height: 44px;
     width: 66px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: rgb(33, 33, 33);
     border-width: 1px;
     border-style: solid;
-    border-color:rgb(78, 78, 78);
+    border-color:rgba(241, 241, 241, 0.15);
     margin-left: -10px;
     margin-right: 10px;
 
     position:relative;
+}
+.search-button:hover{
+    cursor: pointer;
 }
 .search-button,
 .voice-search-button,
@@ -101,34 +106,49 @@
     opacity: 1;
 }
 .search-icon{
-    height:25px;;
+    height:21px;
+    opacity: .8;
 }
 .voice-search-button{
-    height: 36px;
-    width: 36px;
-    border-radius: 18px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
     border:none;
-    background-color: rgb(33, 33, 33);
+    background-color: rgba(241, 241, 241, 0.1);
+}
+.voice-search-button:hover{
+    cursor: pointer;
 }
 .voice-search-icon{
     height: 20px;
+}
+.search-button{
+    border-left: none;
+    border-color: rgba(241, 241, 241, 0.1);
 }
 .right-section{
     width: 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 38px;
     flex-shrink: 0;
 }
 
 .upload-icon{
     height: 24px;
 }
+.upload-icon:hover{
+    cursor: pointer;
+}
 
 .notifications-icon{
     height: 24px;
 }
+.notifications-icon:hover{
+    cursor: pointer;
+}
+
 
 .notifications-count{
     position: absolute;
@@ -153,4 +173,7 @@
 .current-user-icon{
     height: 32px;
     border-radius:16px;
+}
+.current-user-icon:hover{
+    cursor: pointer;
 }
